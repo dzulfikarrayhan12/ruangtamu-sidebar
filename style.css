@@ -322,7 +322,7 @@ body > *:not(footer) {
 .size-buttons button {
   margin: 0; /* Hapus margin dari aturan umum untuk tombol ukuran */
   padding: 0.25rem 0.6rem; /* Mengurangi padding sedikit */
-  background: #white;
+  background: #bbb;
   border: none;
   color: #111;
   border-radius: 4px;
@@ -384,36 +384,36 @@ body > *:not(footer) {
 
 /* Pastikan elemen yang di-scroll adalah container, bukan listnya langsung */
 .scroll-container { /* Anda perlu menambahkan div ini di HTML Anda */
-    overflow-x: hidden; /* Sembunyikan scrollbar */
+    overflow-x: visible; /* Sembunyikan scrollbar */
     width: 100%;
 }
 
 .tag-list.scroll-right {
-  animation: scroll-right 10s linear infinite;
+  animation: scroll-right 5s linear infinite;
 }
 
 .tag-list.scroll-left {
-  animation: scroll-left 10s linear infinite;
+  animation: scroll-left 5s linear infinite;
 }
 
 @keyframes scroll-right {
-  0% { transform: translateX(0%); } /* Mulai dari posisi normal */
-  100% { transform: translateX(-100%); } /* Geser ke kiri sampai akhir list */
+  50% { transform: translateX(0%); } /* Mulai dari posisi normal */
+  1% { transform: translateX(-10%); } /* Geser ke kiri sampai akhir list */
 }
 
 @keyframes scroll-left {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0%); }
+  0% { transform: translateX(-30%); }
+  45% { transform: translateX(0%); }
 }
 
 /* About */
 .about-us {
   padding: 10px 20px;
   background: #0f0f0f; /* Warna latar belakang gelap */
-  color: #white;       /* Warna teks neon */
+  color: #bbb;       /* Warna teks neon */
   text-align: center;
-  border-top: 2px solid #white;
-  border-bottom: 2px solid #white;
+  border-top: 2px solid #bbb;
+  border-bottom: 2px solid #bbb;
 }
 
 .about-us .center-text h2 {
@@ -423,14 +423,14 @@ body > *:not(footer) {
 }
 
 .about-us .center-text h2 span {
-  color: #white;
+  color: #bbb;
 }
 
 .about-us .center-text p {
   margin-top: 10px;
   font-size: 1.2em;
   letter-spacing: 1px;
-  color:#white;
+  color:#bbb;
 }
 
 /* Footer */
@@ -525,4 +525,4 @@ footer {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #00ffe7; }
-}
+  }
